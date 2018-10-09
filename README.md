@@ -5,3 +5,4 @@ Instructions and code for building the LoRa version of the CRIFFLE.
 * Solder header pins
 * Install the ESP32 library https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md
 * Update boards and libraries
+* Add custom board- see Sparkfun tutorial; Goes in Windows C -> Program Files (x86) -> Arduino -> hardware -> arduino -> avr -> variants
