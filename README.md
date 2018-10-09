@@ -7,8 +7,11 @@ Instructions and code for building the LoRa version of the CRIFFLE.
 * Install ESP32 through board manager; update boards and managers by going to board manager -> Type -> Updateable 
 * Add custom board- see Sparkfun tutorial; The pathway is C:\Users\???\AppData\Local\Arduino15\packages\esp32\hardware\esp32\1.0.0\variants
 * Add board to boards.txt- see Sparkfun tutorial; The pathway is C:\Users\???\AppData\Local\Arduino15\packages\esp32\hardware\esp32\1.0.0
-* Download the sketch examples and libraries- see Sparkfun tutorial; the files go in the libraries folder
+* Download the sketch examples and libraries- see Sparkfun tutorial
+* Copy libraries in the download to the Libraries folder in documents
+* Copy ESP-sc-gway folder from the download to the Sketch folder in documents
+* Open ESP-sc-gway; change .ino name to match the root folder if you make a copy
 * Create account on the things network
-* Make changes to esp-sc-gway.h using Geany; Spread should be SF10-12, CAD 0, us.pool.ntp.org, ntp_timezone -4
-* Make changes to loramodem.h using Geany;
-* Open ESP-sc-gway at C:\Users\wkjellstrom\Documents\Arduino\libraries\ESP-1ch-Gateway-v5.0-master\ESP-sc-gway
+* Make changes to esp-sc-gway.h: us.pool.ntp.org, ntp_timezone -4
+* Make changes to loraModem.h- see Sparkfun tutorial
+* Compile and upload sketch
