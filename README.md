@@ -11,3 +11,4 @@ Instructions and code for building the LoRa version of the CRIFFLE.
 * Create account on the things network
 * Make changes to esp-sc-gway.h using Geany; Spread should be SF10-12, CAD 0, us.pool.ntp.org, ntp_timezone -4
 * Make changes to loramodem.h using Geany;
+* Open ESP-sc-gway at C:\Users\wkjellstrom\Documents\Arduino\libraries\ESP-1ch-Gateway-v5.0-master\ESP-sc-gway
