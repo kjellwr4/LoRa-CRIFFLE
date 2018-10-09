@@ -5,4 +5,6 @@ Instructions and code for building the LoRa version of the CRIFFLE.
 * Solder header pins
 * Install the ESP32 library https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md
 * Install ESP32 through board manager; update boards and managers by going to board manager -> Type -> Updateable 
-* Add custom board- see Sparkfun tutorial
+* Add custom board- see Sparkfun tutorial; The pathway is C:\Users\???\AppData\Local\Arduino15\packages\esp32\hardware\esp32\1.0.0\variants
+* Add board to boards.txt- see Sparkfun tutorial; The pathway is C:\Users\wkjellstrom\AppData\Local\Arduino15\packages\esp32\hardware\esp32\1.0.0
+* 
