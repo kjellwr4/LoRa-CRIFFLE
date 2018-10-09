@@ -8,4 +8,6 @@ Instructions and code for building the LoRa version of the CRIFFLE.
 * Add custom board- see Sparkfun tutorial; The pathway is C:\Users\???\AppData\Local\Arduino15\packages\esp32\hardware\esp32\1.0.0\variants
 * Add board to boards.txt- see Sparkfun tutorial; The pathway is C:\Users\???\AppData\Local\Arduino15\packages\esp32\hardware\esp32\1.0.0
 * Download the sketch examples and libraries- see Sparkfun tutorial; the files go in the libraries folder
-*Make changes to esp-sc-gway.h using Geany; Spread should be SF10-12, CAD 0
+* Create account on the things network
+* Make changes to esp-sc-gway.h using Geany; Spread should be SF10-12, CAD 0, us.pool.ntp.org, ntp_timezone -4
+* Make changes to loramodem.h using Geany;
