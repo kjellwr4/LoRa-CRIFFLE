@@ -11,9 +11,8 @@ A LoRaWAN gateway is... A good explanation of the benefits and drawbacks are ill
 * The Things Network
 ## Setup Instructions
 1. Download and install the most recent version of the Arduino IDE.
-2. Open the Arduino IDE and go to _File_ -> _Preferences_. Check the box next to _Display line numbers_. Copy the following URL and paste it in the field next to _Additional Board Managers URLs_. Click the _OK_ button when finished. [See this page for questions](https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md).
-`https://dl.espressif.com/dl/package_esp32_index.json`
-3. Something
+2. Open the Arduino IDE and go to _File_ -> _Preferences_. Check the box next to _Display line numbers_. Copy `https://dl.espressif.com/dl/package_esp32_index.json` and paste it in the field next to _Additional Board Managers URLs_. Click the _OK_ button when finished. [Installation questions?](https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md)
+3. Go to _Tools_ -> _Board: ???_ -> _Board Manager_. Type `ESP32` in the field next to _Filter your search_. Click on the option that is named _esp32 by Espressif Systems_ and then press the _Install_ button. Click the _X_ in the upper right corner when all of the board definitions finish downloading.
 * Solder header pins
 * Install the ESP32 library https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md
 * Install ESP32 through board manager; update boards and managers by going to board manager -> Type -> Updateable 
