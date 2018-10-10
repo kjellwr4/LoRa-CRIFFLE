@@ -7,10 +7,13 @@ A LoRaWAN gateway is... A good explanation of the benefits and drawbacks are ill
 * [Pycom LoRa and Sigfox Antenna Kit- 915Mhz](https://www.sparkfun.com/products/14676)
 * Micro-USB Cable and Wall Wart
 ## Resources
-* [Sparkfun Tutorial](https://learn.sparkfun.com/tutorials/esp32-lora-1-ch-gateway-lorawan-and-the-things-network?_ga=2.47104423.1200190544.1539095630-844852618.1539095630&_gac=1.205334180.1539096507.EAIaIQobChMI_6y2ns353QIVyV6GCh3GHAEjEAAYASAAEgKzjPD_BwE): The content on this page is a modified version of what appears in the Sparkfun tutorial. If questions arise, refer to this page!
+* [Sparkfun Tutorial](https://learn.sparkfun.com/tutorials/esp32-lora-1-ch-gateway-lorawan-and-the-things-network): The content on this page is a modified version of what appears in the Sparkfun tutorial. If questions arise, refer to this page!
 * The Things Network
 ## Setup Instructions
-1.  
+1. Download and install the most recent version of the Arduino IDE.
+2. Open the Arduino IDE and go to _File_ -> _Preferences_. Check the box next to _Display line numbers_. Copy the following URL and paste it in the field next to _Additional Board Managers URLs_. Click the _OK_ button when finished. [See this page for questions](https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md).
+`https://dl.espressif.com/dl/package_esp32_index.json`
+3. Something
 * Solder header pins
 * Install the ESP32 library https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md
 * Install ESP32 through board manager; update boards and managers by going to board manager -> Type -> Updateable 
