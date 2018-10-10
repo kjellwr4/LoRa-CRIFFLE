@@ -11,11 +11,12 @@ A LoRaWAN gateway is... A good explanation of the benefits and drawbacks are ill
 * The Things Network
 ## Setup Instructions
 1. Download and install the most recent version of the Arduino IDE.
-2. Open the Arduino IDE and go to _File_ -> _Preferences_. Check the box next to _Display line numbers_. Copy `https://dl.espressif.com/dl/package_esp32_index.json` and paste it in the field next to _Additional Board Managers URLs_. Click the _OK_ button when finished. [Installation questions?](https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md)
-3. Go to _Tools_ -> _Board: ???_ -> _Board Manager_. Type `ESP32` in the field next to _Filter your search_. Click on the option that is named _esp32 by Espressif Systems_ and then press the _Install_ button. Click the _X_ in the upper right corner when all of the board definitions finish downloading.
-* Solder header pins
-* Install the ESP32 library https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md
-* Install ESP32 through board manager; update boards and managers by going to board manager -> Type -> Updateable 
+2. Install the ESP Library:
+** Open the Arduino IDE and go to _File_ -> _Preferences_. Check the box next to _Display line numbers_. Copy `https://dl.espressif.com/dl/package_esp32_index.json` and paste it in the field next to _Additional Board Managers URLs_. Click the _OK_ button when finished. [Installation questions?](https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md)
+** Go to _Tools_ -> _Board: ???_ -> _Board Manager_. Type `esp32` in the field next to _Filter your search_. Click on the option that is named _esp32 by Espressif Systems_ and then press the _Install_ button. Click the _Close_ button when all of the board definitions finish downloading and installing.
+3. Install the Sparkfun custom board definitions for the ESP32 LoRa 1-Channel Gateway:
+
+4. Something
 * Add custom board- see Sparkfun tutorial; The pathway is C:\Users\???\AppData\Local\Arduino15\packages\esp32\hardware\esp32\1.0.0\variants
 * Add board to boards.txt- see Sparkfun tutorial; The pathway is C:\Users\???\AppData\Local\Arduino15\packages\esp32\hardware\esp32\1.0.0
 * Download the sketch examples and libraries- see Sparkfun tutorial
