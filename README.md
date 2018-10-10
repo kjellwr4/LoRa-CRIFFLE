@@ -14,4 +14,9 @@ Instructions and code for building the LoRa version of the CRIFFLE.
 * Create account on the things network
 * Make changes to esp-sc-gway.h: us.pool.ntp.org, ntp_timezone -4
 * Make changes to loraModem.h- see Sparkfun tutorial
+* Change board and port
 * Compile and upload sketch
+* Open serial monitor and change baud rate to 115200
+* It took a couple of uploads for it to work.
+* Set static ip
+* Find ip and load in browser
