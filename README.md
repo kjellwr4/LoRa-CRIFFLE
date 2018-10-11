@@ -154,7 +154,9 @@ struct pins {
 ```
 9. Save the sketch by going to _File_ -> _Save_.
 10. Compile the sketch to check for errors or missing dependencies.
-11. Setup an account on _The Things Network_. **STOPPED HERE**
+11. Setup an account on [_The Things Network_](https://www.thethingsnetwork.org/).
+    * Setup a Gateway. _I did not do a step-by-step set of instructions, but the process was simple._
+    * Get the latitude and longitude for the gateway's location. Add it to lines 198-199 in the _ESP-sc-gway.h_ tab of the sketch.
 
 
 * Download the sketch examples and libraries- see Sparkfun tutorial
