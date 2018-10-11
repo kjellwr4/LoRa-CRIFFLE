@@ -17,9 +17,9 @@ A LoRaWAN gateway is... A good explanation of the benefits and drawbacks are ill
 3. Install the Sparkfun custom board definitions for the ESP32 LoRa 1-Channel Gateway:
    * Download the [SparkX ESP32 LoRa Arduino Variant Definition (.zip)](https://cdn.sparkfun.com/assets/learn_tutorials/8/0/4/sparkx_esp32_lora-v01.zip) file and save it to the computer. The zip folder will be named _sparkx_esp32_lora-v01.zip_.
    * Unzip the file.
-   * Open a new window and navigate to the following location. Replace the three _???_ with the username for the current user. `C:\Users\???\AppData\Local\Arduino15\packages\esp32\hardware\esp32\1.0.0\variants`
-   * Drag the _sparkx_esp32_lora_ folder from the unzipped folder to the _variants_ folder in the other window.
-   * Go one level up to `C:\Users\???\AppData\Local\Arduino15\packages\esp32\hardware\esp32\1.0.0`. Open _boards.txt_. Copy and paste the code below at the bottom of the open file. Save and close the file.
+   * Open a new window and navigate to the following location. Replace the three _???_ with the username for the current user. _C:\Users\???\AppData\Local\Arduino15\packages\esp32\hardware\esp32\1.0.0\variants_.
+   * Drag the _sparkx_esp32_lora_ folder from the .zip file to the _variants_ folder in the separate window.
+   * Go one level up to _C:\Users\???\AppData\Local\Arduino15\packages\esp32\hardware\esp32\1.0.0_. Open _boards.txt_. Copy-and-paste the code below at the bottom of the open file. Save and close the file.
 ```
 ##############################################################
 
@@ -106,10 +106,17 @@ sparkx_esp32_lora.menu.DebugLevel.verbose=Verbose
 sparkx_esp32_lora.menu.DebugLevel.verbose.build.code_debug=5
 ```
    * The _sparkx_esp32_lora-v01.zip_ folder can be deleted as long as the _sparkx_esp32_lora_ folder is inside of the _variants_ folder.
-4. Download the [ESP-1ch-Gateway-v5.0-master (.zip)](https://github.com/things4u/ESP-1ch-Gateway-v5.0/archive/master.zip) to your computer. This .zip folder contians the sample sketch used to program the gateway.
-   * Unzip the ESP-1ch-Gateway-v5.0-master.zip file.
-   * Open a separate window and navigate to `C:\Users\wkjellstrom\Documents\Arduino\libraries`.
-   
+4. Download the .zip folder contians the libraries and sample sketch used to program the gateway. Install the libraries:
+   * Download the [ESP-1ch-Gateway-v5.0-master (.zip)](https://github.com/things4u/ESP-1ch-Gateway-v5.0/archive/master.zip) to your computer.
+   * Unzip the _ESP-1ch-Gateway-v5.0-master.zip_ file by double clicking on the file. Go to _ESP-1ch-Gateway-v5.0-master_ -> _libraries_.
+   * Open a separate window and navigate to _C:\Users\???\Documents\Arduino\libraries_. Replace the three _???_ with the username for the current user.
+   * Copy-and-paste all of the folders from the _libraries_ folder in the .zip file to the _libraries_ folder in the separate window at _C:\Users\???\Documents\Arduino\libraries_.
+5. Install the _ESP-sc-gway_ sketch:
+   * Navigate to _C:\Users\???\ESP-1ch-Gateway-v5.0-master.zip\ESP-1ch-Gateway-v5.0-master_ in the .zip file from the previous step.
+   * Open a separate window and navigate to _C:\Users\???\Documents\Arduino_. Replace the three _???_ with the username for the current user. This is the default location for the Sketchbook.
+   * Copy-and-paste the _ESP-sc-gway_ folder from the .zip file to the separate window (_C:\Users\???\Documents\Arduino_).
+   * The _ESP-1ch-Gateway-v5.0-master.zip_ folder can be deleted.
+6. Go to _C:\Users\???\Documents\Arduino\ESP-sc-gway_ and open the _ESP-sc-gway.ino_ file. **Note: There are two files that have this name. Choose the one that has the _.ino_ extension and NOT _ESP-sc-gway.h_.**
 
 * Download the sketch examples and libraries- see Sparkfun tutorial
 * Copy libraries in the download to the Libraries folder in documents
