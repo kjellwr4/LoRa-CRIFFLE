@@ -116,7 +116,25 @@ sparkx_esp32_lora.menu.DebugLevel.verbose.build.code_debug=5
    * Open a separate window and navigate to _C:\Users\???\Documents\Arduino_. Replace the three _???_ with the username for the current user. This is the default location for the Sketchbook.
    * Copy-and-paste the _ESP-sc-gway_ folder from the .zip file to the separate window (_C:\Users\???\Documents\Arduino_).
    * The _ESP-1ch-Gateway-v5.0-master.zip_ folder can be deleted.
-6. Go to _C:\Users\???\Documents\Arduino\ESP-sc-gway_ and open the _ESP-sc-gway.ino_ file. **Note: There are two files that have this name. Choose the one that has the _.ino_ extension and NOT _ESP-sc-gway.h_.**
+6. Go to _C:\Users\???\Documents\Arduino\ESP-sc-gway_ and open the _ESP-sc-gway.ino_ file. **Note: There are two files that have this name. Choose the one that has the _.ino_ extension.**
+7. Configure the _ESP-sc-gway.h_ tab in the open sketch:
+   * Line 46: `#define _LFREQ 915`
+   * Line 64: `#define _CAD 0`
+   * Line 90: `#define _PIN_OUT 6`
+   * Line 138: `#define OLED 0`
+   * Line 179: `#define _TTNSERVER "us-west.thethings.network"`
+   * Line 195: `#define _DESCRIPTION "CRIFFLE Gateway"`
+   * Line 196: `#define _EMAIL "YOUR_EMAIL@gmail.com"`
+   * Lines 198-199: Replace the numbers on these two lines with the latitude and longitude for the gateway. _The Things Network_ provides a simple map for finding this information after you create an account (explained in a future step).
+   * Lines 261-265: Change the code on these lines as follows:
+```
+wpas wpa[] = {
+	{ "" , "" },							// Reserved for WiFi Manager
+	{ "WIFI_NETWORK_SSID", "YOUR_WIFI_PASSWORD" }
+};
+```
+8. Something
+
 
 * Download the sketch examples and libraries- see Sparkfun tutorial
 * Copy libraries in the download to the Libraries folder in documents
