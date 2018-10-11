@@ -117,8 +117,8 @@ sparkx_esp32_lora.menu.DebugLevel.verbose.build.code_debug=5
    * Copy-and-paste the _ESP-sc-gway_ folder from the .zip file to the separate window (_C:\Users\???\Documents\Arduino_).
    * The _ESP-1ch-Gateway-v5.0-master.zip_ folder can be deleted.
 6. Go to _C:\Users\???\Documents\Arduino\ESP-sc-gway_ and open the _ESP-sc-gway.ino_ file. **Note: There are two files that have this name. Choose the one that has the _.ino_ extension.**
-7. Configure the _ESP-sc-gway.h_ tab in the open sketch:
-   * Line 46: `#define _LFREQ 915`
+7. Configure the _ESP-sc-gway.h_ tab in the sketch:
+   * Line 46: `#define _LFREQ 915` _*United States frequency_
    * Line 64: `#define _CAD 0`
    * Line 90: `#define _PIN_OUT 6`
    * Line 138: `#define OLED 0`
@@ -126,6 +126,8 @@ sparkx_esp32_lora.menu.DebugLevel.verbose.build.code_debug=5
    * Line 195: `#define _DESCRIPTION "CRIFFLE Gateway"`
    * Line 196: `#define _EMAIL "YOUR_EMAIL@gmail.com"`
    * Lines 198-199: Replace the numbers on these two lines with the latitude and longitude for the gateway. _The Things Network_ provides a simple map for finding this information after you create an account (explained in a future step).
+   * Line 204: `#define NTP_TIMESERVER "us.pool.ntp.org"` _*United States NTP Time Server_
+   * Line 205: `#define NTP_TIMEZONES	-4` _*EST Timezone_
    * Lines 261-265: Change the code on these lines as follows:
 ```
 wpas wpa[] = {
@@ -133,9 +135,25 @@ wpas wpa[] = {
 	{ "WIFI_NETWORK_SSID", "YOUR_WIFI_PASSWORD" }
 };
 ```
-8. Something
-
-
+8. Configure the _loraModem.h_ tab in the sketch:
+   * Go to Line 245 and delete `#error "Pin Definitions _PIN_OUT must be 1(HALLARD) or 2 (COMRESULT)"`.
+   * Paste the following code at Line 245:
+```
+struct pins {
+  uint8_t dio0 = 26;
+  uint8_t dio1 = 33;
+  uint8_t dio2 = 32;
+  uint8_t ss = 16;
+  uint8_t rst = 27; // Reset not used
+} pins;
+#define SCK  14
+#define MISO 12
+#define MOSI 13
+#define SS  16
+#define DIO0 26
+```
+9. Save the sketch by going to _File_ -> _Save_.
+10. Compile the sketch to check for errors or missing dependencies.
 * Download the sketch examples and libraries- see Sparkfun tutorial
 * Copy libraries in the download to the Libraries folder in documents
 * Copy ESP-sc-gway folder from the download to the Sketch folder in documents
