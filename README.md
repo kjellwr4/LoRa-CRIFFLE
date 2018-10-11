@@ -136,7 +136,7 @@ wpas wpa[] = {
 };
 ```
 8. Configure the _loraModem.h_ tab in the sketch:
-   * Go to Line 245 and delete `#error "Pin Definitions _PIN_OUT must be 1(HALLARD) or 2 (COMRESULT)"`.
+   * Go to Line 245 and delete `#error "Pin Definitions _PIN_OUT must be 1(HALLARD) or 2 (COMRESULT)"`
    * Paste the following code at Line 245:
 ```
 struct pins {
@@ -154,6 +154,9 @@ struct pins {
 ```
 9. Save the sketch by going to _File_ -> _Save_.
 10. Compile the sketch to check for errors or missing dependencies.
+11. Setup an account on _The Things Network_. **STOPPED HERE**
+
+
 * Download the sketch examples and libraries- see Sparkfun tutorial
 * Copy libraries in the download to the Libraries folder in documents
 * Copy ESP-sc-gway folder from the download to the Sketch folder in documents
