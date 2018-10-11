@@ -19,7 +19,7 @@ A LoRaWAN gateway is... A good explanation of the benefits and drawbacks are ill
    * Unzip the file.
    * Open a new window and navigate to the following location. Replace the three _???_ with the username for the current user. `C:\Users\???\AppData\Local\Arduino15\packages\esp32\hardware\esp32\1.0.0\variants`
    * Drag the _sparkx_esp32_lora_ folder from the unzipped folder to the _variants_ folder in the other window.
-   * Go one level up to `C:\Users\wkjellstrom\AppData\Local\Arduino15\packages\esp32\hardware\esp32\1.0.0`. Open _boards.txt_. Copy and paste the code below at the bottom of the open file. Save and close the file.
+   * Go one level up to `C:\Users\???\AppData\Local\Arduino15\packages\esp32\hardware\esp32\1.0.0`. Open _boards.txt_. Copy and paste the code below at the bottom of the open file. Save and close the file.
 ```
 ##############################################################
 
@@ -106,9 +106,11 @@ sparkx_esp32_lora.menu.DebugLevel.verbose=Verbose
 sparkx_esp32_lora.menu.DebugLevel.verbose.build.code_debug=5
 ```
    * The _sparkx_esp32_lora-v01.zip_ folder can be deleted as long as the _sparkx_esp32_lora_ folder is inside of the _variants_ folder.
-4. Something
-* Add custom board- see Sparkfun tutorial; The pathway is C:\Users\???\AppData\Local\Arduino15\packages\esp32\hardware\esp32\1.0.0\variants
-* Add board to boards.txt- see Sparkfun tutorial; The pathway is C:\Users\???\AppData\Local\Arduino15\packages\esp32\hardware\esp32\1.0.0
+4. Download the [ESP-1ch-Gateway-v5.0-master (.zip)](https://github.com/things4u/ESP-1ch-Gateway-v5.0/archive/master.zip) to your computer. This .zip folder contians the sample sketch used to program the gateway.
+   * Unzip the ESP-1ch-Gateway-v5.0-master.zip file.
+   * Open a separate window and navigate to `C:\Users\wkjellstrom\Documents\Arduino\libraries`.
+   
+
 * Download the sketch examples and libraries- see Sparkfun tutorial
 * Copy libraries in the download to the Libraries folder in documents
 * Copy ESP-sc-gway folder from the download to the Sketch folder in documents
