@@ -179,3 +179,12 @@ The LoRa device is... It communicates with the gateway...
 * [Sparkfun Tutorial for the Pro Micro](https://learn.sparkfun.com/tutorials/pro-micro--fio-v3-hookup-guide?#installing-windows)
 ## Setup Instructions
 1. Connect the _SparkX Pro RF_ to the computer with a Micro-USB cable. Computers running Windows 10 should automatically recognize the device and install the appropriate drivers. **If this did not happen, refer to the [Sparkfun Tutorial for the Pro Micro](https://learn.sparkfun.com/tutorials/pro-micro--fio-v3-hookup-guide?#installing-windows) for instructions on how to download and install the necessary device drivers.**
+2. Open the Arduino IDE.
+3. Go to _File_ -> _Preferences_. Copy-and-paste `https://raw.githubusercontent.com/sparkfun/Arduino_Boards/master/IDE_Board_Manager/package_sparkfun_index.json` in the field next to _Additional Boards Manager URLs_. Click the _OK_ button.
+4. Go to _Tools_ -> _Boards_ -> _Board Manager_. Type _sparkfun_ in the _Filter your search_ field.
+5. Select _SparkFun AVR Voards by SparkFun Electronics_. Press the _Install_ button.
+6. Click the _Close_ button on the _Boards Manager_.
+7. Go to _Tools_ -> _Boards_. Scroll down to the _SparkFun AVR Boards_ list and select _SparkFun Pro Micro_.
+8. Go to _Tools_. Double-check that the selected processor is _ATmega32U4 (3.3V, 8Mhz)_.
+9. Go to _Tools_ -> _Port_. Select the active _COM ?_ port that corresponds to the SparkFun Pro Micro beneath _Serial ports_.
+
