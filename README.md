@@ -154,21 +154,28 @@ struct pins {
 ```
 9. Save the sketch by going to _File_ -> _Save_.
 10. Compile the sketch to check for errors or missing dependencies.
-11. Setup an account on [_The Things Network_](https://www.thethingsnetwork.org/).
+11. Setup an account on [_The Things Network_](https://www.thethingsnetwork.org/) and then do the following:
     * Setup a Gateway. _I did not do a step-by-step set of instructions, but the process was simple._
     * Get the latitude and longitude for the gateway's location. Add it to lines 198-199 in the _ESP-sc-gway.h_ tab of the sketch.
-
-
-* Download the sketch examples and libraries- see Sparkfun tutorial
-* Copy libraries in the download to the Libraries folder in documents
-* Copy ESP-sc-gway folder from the download to the Sketch folder in documents
-* Open ESP-sc-gway; change .ino name to match the root folder if you make a copy
-* Create account on the things network
-* Make changes to esp-sc-gway.h: us.pool.ntp.org, ntp_timezone -4
-* Make changes to loraModem.h- see Sparkfun tutorial
-* Change board and port
-* Compile and upload sketch
-* Open serial monitor and change baud rate to 115200
-* It took a couple of uploads for it to work.
-* Set static ip
-* Find ip and load in browser
+12. Connect the gateway to the computer using a Micro-USB cable.
+13. Go to _Tools_ -> _Board_. Select _SparkX ESP32 LoRa Gateway_ at the bottom of the _ESP32 Arduino_ list of boards.
+14. Go to _Tools_ -> _Port_. Select the active _COM ?_ port that corresponds to the gateway. _Note: The COM number will vary._
+15. Upload the sketch.
+16. Open the serial monitor when the upload is complete. Do the following:
+    * Change the baud rate to _115200_.
+    * Turn off _Autoscroll_ by unchecking the box in the lower left corner.
+    * Make sure that the gateway successfully connects to the wireles network. Look for a _Connection successful_ message. **If the connection was not successful, try uploading the sketch a second time.**
+    * Confirm that the _Time_ is correct.
+    * Write down the IP address for the gateway.
+17. It is helpful to set a static IP address for the gateway; future changes will be made by typing the IP address into a browser. Setting a static IP address varies depending on the router and network configuration and is not covered in these instructions.
+18. Open a browser and type the IP address and press _Enter/Return_. The _ESP Gateway Config_ page should be visible.
+# LoRa Device
+The LoRa device is... It communicates with the gateway...
+## Items
+* [SparkX Pro RF LoRa 915MHz](https://www.sparkfun.com/products/14785)
+* [Pycom LoRa and Sigfox Antenna Kit- 915Mhz](https://www.sparkfun.com/products/14676)
+* Micro-USB Cable and Wall Wart
+## Resources
+* [Sparkfun Tutorial for the Pro Micro](https://learn.sparkfun.com/tutorials/pro-micro--fio-v3-hookup-guide?#installing-windows)
+## Setup Instructions
+1. Connect the _SparkX Pro RF_ to the computer with a Micro-USB cable. Computers running Windows 10 should automatically recognize the device and install the appropriate drivers. **If this did not happen, refer to the [Sparkfun Tutorial for the Pro Micro](https://learn.sparkfun.com/tutorials/pro-micro--fio-v3-hookup-guide?#installing-windows) for instructions on how to download and install the necessary device drivers.**
