@@ -169,6 +169,7 @@ struct pins {
     * Write down the IP address for the gateway.
 17. It is helpful to set a static IP address for the gateway; future changes will be made by typing the IP address into a browser. Setting a static IP address varies depending on the router and network configuration and is not covered in these instructions.
 18. Open a browser and type the IP address and press _Enter/Return_. The _ESP Gateway Config_ page should be visible.
+19. Unplug the Micro-USB cord from the computer. Plug the gateway into a wall wart so that it is on but not directly powered by the computer. Leave it on!
 # LoRa Device
 The LoRa device is... It communicates with the gateway...
 ## Items
@@ -177,6 +178,8 @@ The LoRa device is... It communicates with the gateway...
 * Micro-USB Cable and Wall Wart
 ## Resources
 * [Sparkfun Tutorial for the Pro Micro](https://learn.sparkfun.com/tutorials/pro-micro--fio-v3-hookup-guide?#installing-windows)
+* [LoRa Library by Sandeep Mistry](https://github.com/sandeepmistry/arduino-LoRa)
+* [SparkX Pro RF Github Repository](https://github.com/sparkfunX/Pro_RF)
 ## Setup Instructions
 1. Connect the _SparkX Pro RF_ to the computer with a Micro-USB cable. Computers running Windows 10 should automatically recognize the device and install the appropriate drivers. **If this did not happen, refer to the [Sparkfun Tutorial for the Pro Micro](https://learn.sparkfun.com/tutorials/pro-micro--fio-v3-hookup-guide?#installing-windows) for instructions on how to download and install the necessary device drivers.**
 2. Open the Arduino IDE.
@@ -187,4 +190,8 @@ The LoRa device is... It communicates with the gateway...
 7. Go to _Tools_ -> _Boards_. Scroll down to the _SparkFun AVR Boards_ list and select _SparkFun Pro Micro_.
 8. Go to _Tools_. Double-check that the selected processor is _ATmega32U4 (3.3V, 8Mhz)_.
 9. Go to _Tools_ -> _Port_. Select the active _COM ?_ port that corresponds to the SparkFun Pro Micro beneath _Serial ports_.
-
+**Stopped Here. Need to go back and look at https://github.com/sparkfunX/Pro_RF. I don't think the stuff below will work. I might also need to rework steps 3-9 depending on what I uncover in the Pro RF github repo.**
+10. Go to _Sketch_ -> _Include Library_ -> _Manage Libraries_. Type _lora_ in the _Filter your search_ field.
+11. Select _LoRa by Sandeep Mistry_ and click the _Install_ button. Press the _Close_ button.
+12. Go to _Files_ -> _Examples_ and scroll down to the _LoRa_ menu. Select _LoRaSender_.
+13. Compile the sketch.
