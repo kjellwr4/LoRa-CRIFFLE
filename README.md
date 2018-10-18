@@ -155,7 +155,23 @@ struct pins {
 9. Save the sketch by going to _File_ -> _Save_.
 10. Compile the sketch to check for errors or missing dependencies.
 11. Setup an account on [_The Things Network_](https://www.thethingsnetwork.org/) and then do the following:
+    * Log into account.
+    * Go to the _Console_.
+    * Create an application by clicking on the _Applications_ button.
+    * Click the _Get started by adding one!_ or _Add application_ link.
+    * Fill in the following in the _ADD APPLICATION_ fields:
+```
+Application ID: some_name (e.g., esp32-1ch-gateway-cville)
+Description: 1-Channel Gateway for CRIFFLE Project
+Application EUI: EUI issued by The Things Network
+Handler Registration: ttn-handler-us-west
+```
+    * Click the _Add application_ button.
+    
+    
+    
     * Setup a Gateway. _I did not do a step-by-step set of instructions, but the process was simple._
+    
     * Get the latitude and longitude for the gateway's location. Add it to lines 198-199 in the _ESP-sc-gway.h_ tab of the sketch.
 12. Connect the gateway to the computer using a Micro-USB cable.
 13. Go to _Tools_ -> _Board_. Select _SparkX ESP32 LoRa Gateway_ at the bottom of the _ESP32 Arduino_ list of boards.
