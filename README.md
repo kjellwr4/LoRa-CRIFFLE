@@ -154,7 +154,8 @@ struct pins {
 ```
 9. Save the sketch by going to _File_ -> _Save_.
 10. Compile the sketch to check for errors or missing dependencies.
-11. Setup an account on [_The Things Network_](https://www.thethingsnetwork.org/) and then do the following:
+11. Setup an account on [_The Things Network_](https://www.thethingsnetwork.org/).
+12. Create an application by doing the following:
     * Log into account.
     * Go to the _Console_.
     * Create an application by clicking on the _Applications_ button.
@@ -166,8 +167,20 @@ Description: 1-Channel Gateway for CRIFFLE Project
 Application EUI: EUI issued by The Things Network
 Handler Registration: ttn-handler-us-west
 ```
-    * Click the _Add application_ button.
-    
+* Click the _Add application_ button.
+13. Create a device for the application by doing the following:
+    * Open the Application that was created in step 12.
+    * Click the _register device_ link underneath the _Devices_ section.
+    * Click the _Get started by registering one!_ link.
+    * Fill in the field beneath _Device ID_. This is the name and will be similar to the Application (e.g., _esp32-gateway_).
+    * Make click the button next to the _Device EUI_ AND _App Key_ so that the field reads, _this field will be generated_.
+    * Don't change _App EUI_.
+    * Click the _Register_ button. 
+14. Click the _Settings_ button on the _DEVICE OVERVIEW_ page.
+    * Change the _Activation Method_ to _ABP_.
+    * Uncheck the button next to _Frame Counter Checks_.
+    * Click the _Save_ button.
+16. Keep the _DEVICE OVERVIEW_ page open.
     
     
     * Setup a Gateway. _I did not do a step-by-step set of instructions, but the process was simple._
