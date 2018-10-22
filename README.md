@@ -119,6 +119,7 @@ sparkx_esp32_lora.menu.DebugLevel.verbose.build.code_debug=5
 6. Go to _C:\Users\???\Documents\Arduino\ESP-sc-gway_ and open the _ESP-sc-gway.ino_ file. **Note: There are two files that have this name. Choose the one that has the _.ino_ extension.**
 7. Configure the _ESP-sc-gway.h_ tab in the sketch:
    * Line 46: `#define _LFREQ 915` _*United States frequency_
+   * Line 55: `#define _SPREADING SF11`
    * Line 64: `#define _CAD 0`
    * Line 90: `#define _PIN_OUT 6`
    * Line 138: `#define OLED 0`
@@ -181,8 +182,23 @@ Handler Registration: ttn-handler-us-west
     * Uncheck the button next to _Frame Counter Checks_.
     * Click the _Save_ button.
 16. Keep the _DEVICE OVERVIEW_ page open.
-    
-    
+17. Open the _ESP-sc-gway_ sketch in the Arduino IDE. Go to the _ESP-sc-gway.h_ tab and change the following lines:
+    * Line 218: Click the _<>_ next to _Device Address_ in the _Device Overview_ page on _The Things Network_ website. Copy the code and replace `{ 0x26, 0x01, 0x01, 0x01 }`.
+    * Line 219: Click the _<>_ next to _App Session Key_ in the _Device Overview_ page on _The Things Network_ website. Copy the code and replace `{ 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }`.
+    * Line 220: Click the _<>_ next to _Network Session Key_ in the _Device Overview_ page on _The Things Network_ website. Copy the code and replace `{ 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }`.
+18. Compile and upload the sketch.
+19. Open the serial monitor when the upload is complete. Do the following:
+    * Change the baud rate to _115200_.
+    * Turn off _Autoscroll_ by unchecking the box in the lower left corner.
+    * Make sure that the gateway successfully connects to the wireles network. Look for a _Connection successful_ message. **If the connection was not successful, try uploading the sketch a second time.**
+    * Confirm that the _Time_ is correct.
+    * Write down the _IP address_ for the gateway.
+17. It is helpful to set a static IP address for the gateway; future changes will be made by typing the IP address into a browser. Setting a static IP address varies depending on the router and network configuration and is not covered in these instructions.
+18. Open a browser and type the IP address and press _Enter/Return_. The _ESP Gateway Config_ page should be visible.
+19. Unplug the Micro-USB cord from the computer. Plug the gateway into a wall wart so that it is on but not directly powered by the computer. Leave it on!
+
+**STOPPED Here**
+
     * Setup a Gateway. _I did not do a step-by-step set of instructions, but the process was simple._
     
     * Get the latitude and longitude for the gateway's location. Add it to lines 198-199 in the _ESP-sc-gway.h_ tab of the sketch.
